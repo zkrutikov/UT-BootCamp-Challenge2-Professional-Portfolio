@@ -43,10 +43,10 @@ header nav ul li a {
 /* Body */
 
 body {
-    background-image: url("../images/hero-background.jpg");
-    background-size: cover;
+   background-image: url("../images/hero-background.jpg");
+   background-size: cover;
+   padding: 20px;
 }
-
 /* Hero Section */
 
 .hero {
@@ -91,22 +91,28 @@ main {
     font-size: 20px;
     flex: 2;
     padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
 }
 
 /* Contact Me Section */
 
 .myInfo {
     display: flex; 
-    justify-content: center;
+    justify-content: space-between;
+    align-content: center;
     align-items: center;
-    padding-top: 28px;
 }
-
+#contactInfo {
+    justify-content: space-evenly;
+}
 #contactInfo ul li {
     width: 150px;
     height: 30px;
     list-style-position: inside;
     list-style-type: none;
+    
 }
 
 #contactInfo ul li a {
@@ -129,8 +135,44 @@ main {
 .projectOne, .projectTwo, .projectThree, .projectFour {
     border: 3px solid black;
 }
+.projectTwo, .projectThree, .projectFour {
+    margin-top: 15px;
+    flex:1;
+    background-color: teal;
+    text-align: center;
+}
+.projectTwo, .projectThree {
+    margin-right: 15px;
+}
 .projectOne {
+    background-image: url("../images/run-buddy.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     width: 600px;
     height: 400px;
-    background-image: url("../run-buddy.jpeg");
+    
 }
+#workContent {
+    justify-content: space-evenly;
+    
+}
+#run-buddy {
+    flex-basis: 100%;
+}
+#run-buddy-link {
+    padding: 15px;
+}
+#run-buddy-link span:hover {
+    font-size: 32px;
+}
+
+#run-buddy-link a {
+    text-decoration: none;
+    color: black;
+}
+#run-buddy-link a span {
+font-weight: bold;
+font-size: 30px;
+}
+    
